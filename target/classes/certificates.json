@@ -1,0 +1,50 @@
+[
+  {
+    "cost": 1000,
+    "dateOfCertificationDone": "2023-07-13",
+    "courseName": "C",
+    "institutionName": "Shapestone",
+    "studentId": "101",
+    "certificateId": 1
+  },
+  {
+    "cost": 2000,
+    "dateOfCertificationDone": "2023-07-10",
+    "courseName": "C++",
+    "institutionName": "Shapestone",
+    "studentId": "101",
+    "certificateId": 2
+  },
+  {
+    "cost": 3000,
+    "dateOfCertificationDone": "2023-07-09",
+    "courseName": "Python",
+    "institutionName": "Shapestone",
+    "studentId": "101",
+    "certificateId": 3
+  },
+  {
+    "cost": 1000,
+    "dateOfCertificationDone": "2023-07-12",
+    "courseName": "C",
+    "institutionName": "Shapestone",
+    "studentId": "102",
+    "certificateId": 4
+  },
+  {
+    "cost": 1000,
+    "dateOfCertificationDone": "2023-07-11",
+    "courseName": "C",
+    "institutionName": "Shapestone",
+    "studentId": "103",
+    "certificateId": 5
+  },
+  {
+    "cost": 1000,
+    "dateOfCertificationDone": "2023-07-08",
+    "courseName": "C",
+    "institutionName": "Shapestone",
+    "studentId": "104",
+    "certificateId": 6
+  }
+]

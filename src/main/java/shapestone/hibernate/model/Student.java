@@ -1,44 +1,65 @@
 package shapestone.hibernate.model;
 
+import java.util.Set;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
+/**
+ * @author surya
+ *
+ */
 @Entity
 @Table(name = "student")
 public class Student {
 	@Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id")
-    private int id;
+	@Column(name = "id")
+	private int id;
 
-    @Column(name = "first_name")
-    private String firstName;
+	@Column(name = "first_name")
+	private String name;
 
-    @Column(name = "last_name")
-    private String lastName;
+	@Column(name = "last_name")
+	private String lastName;
 
-    @Column(name = "email")
-    private String email;
+	@Column(name = "age")
+	private int age;
 
+	@OneToMany(cascade=CascadeType.ALL, mappedBy = "student")
+	private Set<Certificate> certificates;
+	
 	public Student() {
 		super();
 	}
+	
+	
 
-	public Student(String firstName, String lastName, String email) {
+	public Student(int id, String name, String lastName, int age) {
 		super();
-		this.firstName = firstName;
+		this.id = id;
+		this.name = name;
 		this.lastName = lastName;
-		this.email = email;
+		this.age = age;
 	}
 
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+
+
+	public Set<Certificate> getCertificates() {
+		return certificates;
 	}
+
+
+
+	public void setCertificates(Set<Certificate> certificates) {
+		this.certificates = certificates;
+	}
+
+
 
 	public int getId() {
 		return id;
@@ -48,12 +69,12 @@ public class Student {
 		this.id = id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getName() {
+		return name;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getLastName() {
@@ -64,16 +85,25 @@ public class Student {
 		this.lastName = lastName;
 	}
 
-	public String getEmail() {
-		return email;
+	public int getAge() {
+		return age;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setAge(int age) {
+		this.age = age;
 	}
-    
-    
-    
+
+	public Student(String name, String lastName, int age) {
+		super();
+		this.name = name;
+		this.lastName = lastName;
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", lastName=" + lastName + ", age=" + age + ", certificates="
+				+ certificates + "]";
+	}
+
 }
-
-
