@@ -1,0 +1,30 @@
+[
+{
+        "name": "Gopi",
+        "patientId": 1001,
+        "age": 24,
+        "gender": "male",
+        "address": "khammam"
+    },
+    {
+        "name": "sravan",
+        "patientId": 1008,
+        "age": 25,
+        "gender": "male",
+        "address": "vemulavada" 
+    },
+    {
+         "name": "phani",
+        "patientId": 1005,
+        "age": 21,
+        "gender": "male",
+        "address": "vizag"
+    },
+    {
+     "name": "nithish",
+        "patientId": 1006,
+        "age": 20,
+        "gender": "male",
+        "address": "nandhigamma"
+     }
+    ]

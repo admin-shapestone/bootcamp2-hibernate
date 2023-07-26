@@ -1,0 +1,42 @@
+[
+{
+     "treatmentId" : 1,
+      "patientId" : 1001,
+      "diagnosis" : "leg fracture",
+      "treatment" : "leg operation ",
+      "dateOfTreatment" : "2023-07-28",
+      "cost" :60000
+    },
+    {
+     "treatmentId" : 2,
+      "patientId" : 1008,
+      "diagnosis" : "eye",
+      "treatment" : "eye test",
+      "dateOfTreatment" : "2023-07-25",
+      "cost" :4000
+    },
+    {
+    "treatmentId" : 3,
+      "patientId" : 1001,
+      "diagnosis" : "eye",
+      "treatment" : "eye test",
+      "dateOfTreatment" : "2023-07-26",
+      "cost" :4000
+    },
+    {
+     "treatmentId" : 4,
+      "patientId" : 1006,
+      "diagnosis" : "leg",
+      "treatment" : "leg test",
+      "dateOfTreatment" : "2023-07-29",
+      "cost" :7000
+    },
+    {
+     "treatmentId" : 5,
+      "patientId" : 1005,
+      "diagnosis" : "stomach ache",
+      "treatment" : "MRI test",
+      "dateOfTreatment" : "2023-07-28",
+      "cost" :1000
+    }
+    ]
