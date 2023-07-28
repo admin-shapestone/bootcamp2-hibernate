@@ -8,13 +8,11 @@ public class AccountVO {
 	private String dateOfJoining;
 	private double openingBalance;
 
-	
 	public AccountVO() {
 		super();
 	}
 
-	public AccountVO(long accountId, String name, int age, String gender, String dateOfJoining,
-			double openingBalance) {
+	public AccountVO(long accountId, String name, int age, String gender, String dateOfJoining, double openingBalance) {
 		this.accountId = accountId;
 		this.name = name;
 		this.age = age;
@@ -76,6 +74,5 @@ public class AccountVO {
 		return "AccountVO [accountId=" + accountId + ", name=" + name + ", age=" + age + ", gender=" + gender
 				+ ", dateOfJoining=" + dateOfJoining + ", openingBalance=" + openingBalance + "]";
 	}
-	
-	
+
 }

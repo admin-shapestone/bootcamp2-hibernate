@@ -17,7 +17,7 @@
 
 		<!-- List of XML mapping files -->
 		<mapping class="shapestone.hibernate.model.Account" />
-		<mapping class="shapestone.hibernate.model.Payment" />
+		<mapping class     apestone.hibernate.model.Payment" />
 
 	</session-factory>
 </hibernate-configuration>

@@ -1,4 +1,4 @@
-package shapestone.hibernate.util;
+ package shapestone.hibernate.util;
 
 import java.util.Properties;
 

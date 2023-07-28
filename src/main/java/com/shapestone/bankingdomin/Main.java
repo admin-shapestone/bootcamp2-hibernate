@@ -24,6 +24,19 @@ public class Main {
 	public static void main(String[] args) throws StreamReadException, DatabindException, IOException {
 
 		boolean continueLoop = true;
+		Scanner sc = new Scanner(System.in);
+
+		ObjectMapper mapper = new ObjectMapper();
+
+		ArrayList<AccountVO> accountList = mapper.readValue(new File("Accounts.json"),
+				new TypeReference<ArrayList<AccountVO>>() {
+				});
+
+		ArrayList<PaymentVO> paymentList = mapper.readValue(new File("Payments.json"),
+				new TypeReference<ArrayList<PaymentVO>>() {
+				});
+
+		CrudOperations.insertData(accountList, paymentList);
 		do {
 			System.out.println("1 for Retrive data from database");
 			System.out.println("2 for delete data from data base");
@@ -31,20 +44,6 @@ public class Main {
 			System.out.println("4 for get All account details in asscending order");
 			System.out.println("5 for Check your AccountBalance");
 			System.out.println("6 for current weeek Account openings");
-
-			Scanner sc = new Scanner(System.in);
-
-			ObjectMapper mapper = new ObjectMapper();
-
-			ArrayList<AccountVO> accountList = mapper.readValue(new File("Accounts.json"),
-					new TypeReference<ArrayList<AccountVO>>() {
-					});
-
-			ArrayList<PaymentVO> paymentList = mapper.readValue(new File("Payments.json"),
-					new TypeReference<ArrayList<PaymentVO>>() {
-					});
-
-			// CrudOperations.insertData(accountList, paymentList);
 
 			int option = sc.nextInt();
 			if (option == 1) {
