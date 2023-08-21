@@ -1,18 +1,23 @@
-<?xml version='1.0' encoding='UTF-8'?>  
-<!DOCTYPE hibernate-configuration PUBLIC  
-          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
-          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
-  
-<hibernate-configuration>  
-  
-    <session-factory>  
-        <property name="hbm2ddl.auto">update</property>  
-        <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>  
-        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
-        <property name="connection.username">system</property>  
-        <property name="connection.password">jtp</property>  
-        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>  
-    <mapping resource="employee.hbm.xml"/>  
-    </session-factory>  
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Hibernate_bankingDomin</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">pkbqyiytuh9#738</property>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+
+
+		<!-- List of XML mapping files -->
+		<mapping class="shapestone.hibernate.model.Account" />
+		<mapping class     apestone.hibernate.model.Payment" />
+
+	</session-factory>
 </hibernate-configuration>
